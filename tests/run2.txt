@@ -1,0 +1,89 @@
+Testing project hw3test_1795343404_95690
+ Image hw3test_1795343404_95690-app Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 540B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 228B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.13-slim
+#3 DONE 0.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 80B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90
+#5 resolve docker.io/library/python:3.13-slim@sha256:e48f59cdba69a3cbd9ed2cf0f348d90d45a8d350d98134cf1070bc106ee9ed90 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 94B done
+#6 DONE 0.0s
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [3/6] COPY app/requirements.txt .
+#8 CACHED
+
+#9 [5/6] COPY app/app.py .
+#9 CACHED
+
+#10 [4/6] RUN pip install -r requirements.txt
+#10 CACHED
+
+#11 [6/6] RUN mkdir /data
+#11 CACHED
+
+#12 exporting to image
+#12 exporting layers done
+#12 exporting manifest sha256:39fa98630a3d6de275c06767fb5930f120d18c39c4b8bc75f595805c9de2e1b9 done
+#12 exporting config sha256:7c43e48320d57cc216e03712ece9f635d68e3aaf5813fa361ccac00a8107e383 done
+#12 exporting attestation manifest sha256:ea6d564c7913d64fd508543c1f9b14fc0085d3dde1a7004446d511054921b8e0 done
+#12 exporting manifest list sha256:9deea09ee531f814e3914db91a03337201f34b42ce921adb5a380e89fc70bdac done
+#12 naming to docker.io/library/hw3test_1795343404_95690-app:latest done
+#12 unpacking to docker.io/library/hw3test_1795343404_95690-app:latest done
+#12 DONE 0.0s
+
+#13 resolving provenance for metadata file
+#13 DONE 0.0s
+ Image hw3test_1795343404_95690-app Built 
+ Network hw3test_1795343404_95690_default Creating 
+ Network hw3test_1795343404_95690_default Creating 
+ Volume hw3test_1795343404_95690_redis_data Creating 
+ Volume hw3test_1795343404_95690_redis_data Creating 
+ Volume hw3test_1795343404_95690_redis_data Created 
+ Volume hw3test_1795343404_95690_redis_data Created 
+ Network hw3test_1795343404_95690_default Created 
+ Network hw3test_1795343404_95690_default Created 
+ Container hw3test_1795343404_95690-redis-1 Creating 
+ Container hw3test_1795343404_95690-redis-1 Created 
+ Container hw3test_1795343404_95690-app-1 Creating 
+ Container hw3test_1795343404_95690-app-1 Created 
+ Container hw3test_1795343404_95690-redis-1 Starting 
+ Container hw3test_1795343404_95690-redis-1 Started 
+ Container hw3test_1795343404_95690-redis-1 Waiting 
+ Container hw3test_1795343404_95690-redis-1 Healthy 
+ Container hw3test_1795343404_95690-app-1 Starting 
+ Container hw3test_1795343404_95690-app-1 Started 
+OK: increment
+ Container hw3test_1795343404_95690-app-1 Recreate 
+ Container hw3test_1795343404_95690-app-1 Recreated 
+ Container hw3test_1795343404_95690-app-1 Starting 
+ Container hw3test_1795343404_95690-app-1 Started 
+OK: recreate app
+ Container hw3test_1795343404_95690-redis-1 Stopping 
+ Container hw3test_1795343404_95690-redis-1 Stopped 
+OK: redis stopped
+ Container hw3test_1795343404_95690-redis-1 Starting 
+ Container hw3test_1795343404_95690-redis-1 Started 
+OK: redis restarted
+ Container hw3test_1795343404_95690-app-1 Stopping 
+ Container hw3test_1795343404_95690-redis-1 Stopping 
+ Container hw3test_1795343404_95690-redis-1 Stopped 
+ Container hw3test_1795343404_95690-app-1 Stopped 
+OK: backup in backups/hw3test_1795343404_95690.tar
+ALL CHECKS PASSED
